@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company website design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">BRANCES</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Computer Science</a></li>
+                        <li><a href="#">Electronics and Communication</a></li>
+                        <li><a href="#">Machine Learning</a></li>
+                        <li><a href="#">Artificial Intelligence</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">ELECTRONIC PROJECTS</a>
+                    <ul class="dropdown">
+                        <li><a href="#">IoT Projects</a></li>
+                        <li><a href="#">Raspberry pi Projects</a></li>
+                        <li><a href="#">Arduino Projects</a></li>
+                        <li><a href="#">Drone and Robotics</a></li>
+                        <li><a href="#">Sensor based Projects</a></li>
+                        <li><a href="#">GSM based Projects</a></li>
+                        <li><a href="#">Wireless Communication Projects</a></li>
+                        <li><a href="#">Solar based Projects</a></li>
+                        <li><a href="#">GPS based projects</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">SOFTWARE PROJECTS</a>
+                    <ul class="dropdown" >
+                        <li><a href="#">Machine Learning Projects</a></li>
+                        <li><a href="#">Artificial Intelligence projects</a></li>
+                        <li><a href="#">Python Projects</a></li>
+                        <li><a href="#">Java based Projects</a></li>
+                        <li><a href="#">Android based Projects</a></li>
+                        <li><a href="#">Data Science based Projects</a></li>
+                        <li><a href="#">Deep Learning Projects</a></li>
+                        <li><a href="#">Cloud Computing Projects</a></li>
+                        <li><a href="#">Network Security Projects</a></li>
+                        <li><a href="#">Block Chain Projects</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">DOMAINS</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Embeded Systems</a></li>
+                        <li><a href="#">Internet of Things</a></li>
+                        <li><a href="#">Python and Datascience</a></li>
+                        <li><a href="#">AI and ML</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+                
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Techmiya Projects</h1>
+            <p>Our mission is to provide a platform where creativity meets technology.</p>
+            <a href="" class="hero-btn">Visit Us To Know More</a>
+
+        </div>
+         
+ 
+
+    </section>
+
+    <!------Welcome to Techmiya------>
+    <section id ="feature">
+        <div class="welcome">
+            <p>WELCOME TO TECHMIYA</p>
+            <h1>Why Should You Join Us!!!</h1>
+        </div>
+        <div class="service-box">
+            <div class="single-service">
+                <img src="images/cutt.png">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Cutting Edge Technologies</h3>
+                    <hr>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="images/real.png">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Real World Projects</h3>
+                    <hr>
+            </div>
+
+            </div>
+            <div class="single-service">
+                <img src="images/collab.png">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Collaborative Learning</h3>
+                    <hr>
+            </div>
+            </div>
+            <div class="single-service">
+                <img src="images/mentor.png">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Industrial Mentorship</h3>
+                    <hr>
+            </div>
+            </div>
+            <div class="single-service">
+                <img src="images/creativity.png">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Innovation and Creativity</h3>
+                    <hr>
+            </div>
+            </div>
+            <div class="single-service">
+                <img src="images/Certification.png">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Certification and Recognition</h3>
+                    <hr>
+                </div>
+            </div>
+            </div>
+    </section>
+    
+<!------Javascript for Toggle Menu------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";    
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";    
+        }
+
+    </script>   
+</body>
+</html>
